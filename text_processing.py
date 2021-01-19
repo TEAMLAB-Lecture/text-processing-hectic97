@@ -63,4 +63,6 @@ def no_vowels(input_string):
     no_vowel_string = (input_string+'0')[:-1]
     for v in vowel:
         no_vowel_string = no_vowel_string.replace(v,'')
+        no_vowel_string = no_vowel_string.replace(v.upper(),'')
+    
     return no_vowel_string
